@@ -361,7 +361,7 @@ QString UpdateModel::getUrl() const
 {
     Q_D(const UpdateModel);
     if (!d->m_release) return 0;
-    return qfu( d->m_release->psz_desc );
+    return qfu( d->m_release->psz_url );
 }
 
 double UpdateModel::getProgress() const
